@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
   <title>Firebase9</title>
 </head>
 <body>
-  <h1>getting started with firebase 9</h1>
-  <h2>Add a Book</h2>
-  <form class="add">
-    <label for="title">Title</label><br>
-    <input type="text" name="title" required><br><br>
-    <label for="author">Author</label><br>
-    <input type="text" name="author" required><br><br>
-    <button>Add new book</button>
-  </form>
-  <br><br>
-  <form class="delete">
-    <label for="id">id</label><br>
-    <input type="text" name="id" required><br><br>
-    <button>Remove book</button>
-  </form>
+  <div class="text-center text-xl bg-slate-700 text-white font-bold py-4 ">Getting started with Firebase 9</div>
+  <div class=" flex justify-around bg-slate-600 text-white p-6 ">
+    <form class="add p-6">
+      <h2 class="text-xl py-2 " >Add a Book</h2>
+      <h4 >Title</h4>
+      <input class="text-black " type="text" name="title" required><br><br>
+      <h4 >Author</h4>
+      <input class="text-black " type="text" name="author" required><br><br>
+      <button class="bg-blue-500 py-2 px-4 rounded font-bold " >Add new book</button>
+    </form>
 
+    <form class="add p-6">
+      <h2 class="text-xl py-2 " >Update a Book</h2>
+      <h4 >Title</h4>
+      <input class="text-black " type="text" name="title" required><br><br>
+      <h4 >Author</h4>
+      <input class="text-black " type="text" name="author" required><br><br>
+      <button class="bg-blue-500 py-2 px-4 rounded font-bold " >Add new book</button>
+    </form>
+
+    <form class="delete p-6 ">
+      <h2 class="text-xl py-2 " >Remove a Book</h2>
+      <h4 >id</h4>
+      <input class="text-black " type="text" name="id" required><br><br>
+      <button class="bg-red-500 py-2 px-4 rounded font-bold " >Remove book</button>
+    </form>
+  </div>
   <script src="bundle.js" ></script>
 </body>
 </html>
